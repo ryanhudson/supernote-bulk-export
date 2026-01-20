@@ -52,12 +52,22 @@ uv run /Users/ryan/development/cdex/supernote-bulk-export/supernote_bulk_export.
 ## One-liner via GitHub Gist
 
 This script is designed to work as a one-shot tool with `uv run` and a raw Gist URL.
-Run it from your destination folder:
+`~/Supernote/EXPORT` is the folder containing your `.note` files (copied from the Supernote device).
+`~/Supernote/PDF` is the output folder where you want PDFs to be written.
+Run it from your destination/output folder so the PDFs land there:
 
 ```bash
 cd ~/Supernote/PDF
 uv run https://gist.githubusercontent.com/ryanhudson/2b412c961228a5413dc001c1fd77ee03/raw/supernote_bulk_export.py \
   ~/Supernote/EXPORT
+```
+
+If your folders are named differently, just replace those paths. For example:
+
+```bash
+cd /path/to/pdf-output
+uv run https://gist.githubusercontent.com/ryanhudson/2b412c961228a5413dc001c1fd77ee03/raw/supernote_bulk_export.py \
+  /path/to/note-files
 ```
 
 ## Notes
