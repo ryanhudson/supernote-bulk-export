@@ -1,0 +1,10 @@
+[project]
+name = "supernote-bulk-export"
+version = "0.1.0"
+description = "Bulk export Supernote .note files to PDF using supernote-tool."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["supernotelib"]
+
+[project.scripts]
+supernote-bulk-export = "supernote_bulk_export:main"
