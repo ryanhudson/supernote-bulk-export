@@ -37,11 +37,11 @@ uv run /Users/ryan/development/cdex/supernote-bulk-export/supernote_bulk_export.
 ## One-liner via GitHub Gist
 
 This script is designed to work as a one-shot tool with `uv run` and a raw Gist URL.
-Put `supernote_bulk_export.py` in a public Gist, then run it from your destination folder:
+Run it from your destination folder:
 
 ```bash
 cd ~/Supernote/PDF
-uv run https://gist.githubusercontent.com/<user>/<gist-id>/raw/supernote_bulk_export.py \
+uv run https://gist.githubusercontent.com/ryanhudson/2b412c961228a5413dc001c1fd77ee03/raw/supernote_bulk_export.py \
   ~/Supernote/EXPORT
 ```
 
