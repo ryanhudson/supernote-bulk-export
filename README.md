@@ -2,6 +2,21 @@
 
 Bulk export Supernote `.note` files to PDF using `supernote-tool`.
 
+Quick Start (one-liner)
+
+Run from the folder you want the PDFs to be written into:
+
+```bash
+cd /path/to/pdf-output
+uv run https://gist.githubusercontent.com/ryanhudson/2b412c961228a5413dc001c1fd77ee03/raw/supernote_bulk_export.py \
+  /path/to/your/notes
+```
+
+This will:
+- Read `.note` files from the source folder (recursively).
+- Write PDFs into the current folder, mirroring subfolders.
+- Verify source files never change (hash before/after).
+
 ## Prerequisites
 
 - Python 3.10+
